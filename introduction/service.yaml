@@ -10,7 +10,7 @@ spec:
     - port: 8080
       # Port to foward to containers in pod
       targetPort: 81
-      name: hejhej
+      name: portname
       # Port accessible outside cluster
       nodePort: 30001
   type: LoadBalancer
