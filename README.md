@@ -1,3 +1,3 @@
 # kubernetes
 
-## Introduction to Microservices, Kubernetes, and Docker
+## Introduction to Microservices, Kubernetes and Docker
