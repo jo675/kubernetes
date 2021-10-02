@@ -39,7 +39,7 @@ replicaset.apps/hello-world-deployment-7764c5d85b   5         5         5       
 ```
 
 
-Check that service is running.
+Check that app is running.
 ```
 ❯ curl 192.168.49.2:30001
 Hello world from Python Flask
