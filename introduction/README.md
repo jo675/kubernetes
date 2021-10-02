@@ -2,7 +2,7 @@
 
 ## Flask app running on minikube cluster. 
 
-### Deployment creates 5 replicas of custom image.
+### Deployment creates 5 pods each running custom image.
 
 Create the service.
 
