@@ -37,3 +37,12 @@ deployment.apps/hello-world-deployment   5/5     5            5           35s
 NAME                                                DESIRED   CURRENT   READY   AGE
 replicaset.apps/hello-world-deployment-7764c5d85b   5         5         5       35s
 ```
+
+
+Check that service is running.
+```
+❯ curl 192.168.49.2:30001
+Hello world from Python Flask
+Greetings from container: hello-world-deployment-7764c5d85b-vs4dj
+```
+
