@@ -1,6 +1,6 @@
 # Introduction to kubernetes
 
-## Flask app running on minikube cluster. 
+## Python flask app running on minikube cluster. 
 
 ### Deployment creates 5 pods each running custom image.
 
