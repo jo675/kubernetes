@@ -18,7 +18,7 @@ Create a persistent volume claim.
 persistentvolumeclaim/example-claim created
 ```
 
-Check that it’s been bound to the persistent volume.
+Check that it’s bound to the persistent volume.
 ```
 ❯ kubectl get pvc
 NAME            STATUS   VOLUME           CAPACITY   ACCESS MODES   STORAGECLASS   AGE
