@@ -1,6 +1,6 @@
 ## A little test of static persistent storage using hostPath
 
-### Create a persistent volume and check the resource
+Create a persistent volume and check the resource
 ```
 ❯ kubectl create -f my-pv.yaml
 persistentvolume/example-volume created
@@ -9,7 +9,7 @@ NAME             CAPACITY   ACCESS MODES   RECLAIM POLICY   STATUS      CLAIM   
 example-volume   1Gi        RWO            Retain           Available           hostpath                8s
 ```
 
-### Create a persistent volume claim and check that it’s been bound to the persistent volume
+Create a persistent volume claim and check that it’s been bound to the persistent volume
 ```
 ❯ kubectl create -f my-pvc.yaml
 persistentvolumeclaim/example-claim created
@@ -18,7 +18,7 @@ NAME            STATUS   VOLUME           CAPACITY   ACCESS MODES   STORAGECLASS
 example-claim   Bound    example-volume   1Gi        RWO            hostpath       3s
 ```
 
-### Create a busybox pod with reference to the persistent volume claim
+Create a busybox pod with reference to the persistent volume claim
 ```
 ❯ kubectl create -f busybox.yaml
 pod/busybox created
@@ -27,12 +27,12 @@ NAME      READY   STATUS    RESTARTS   AGE
 busybox   1/1     Running   0          6s
 ```
 
-### Create a file in the container
+Create a file in the container
 ```
 ❯ kubectl exec busybox -- touch /host/app.py
 ```
 
-### Delete and recreate the pod and verify that the file has been persisted
+Delete and recreate the pod and verify that the file has been persisted
 ```
 ❯ kubectl delete pod busybox
 pod "busybox" deleted
