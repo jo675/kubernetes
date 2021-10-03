@@ -1,6 +1,6 @@
 ## Python flask app running on minikube cluster. 
 
-### Deployment creates 5 pods each running container from custom image.
+### Deployment creates 5 pods each running container built from custom image.
 
 Create the service.
 
