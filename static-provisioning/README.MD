@@ -1,4 +1,4 @@
-## A little test of static persistent storage
+## A little test of static persistent storage using hostPath
 
 ### Create a persistent volume and check the resource
 ```
